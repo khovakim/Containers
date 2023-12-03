@@ -14,7 +14,6 @@ namespace cp
 	class vector
 	{
 		public:
-
 			using value_type      = T;
 			using pointer         = T*;
 			using reference       = T&;
@@ -28,8 +27,13 @@ namespace cp
 			using iterator        = cp::random_access_iterator<value_type>;
 			using const_iterator  = cp::random_access_iterator<const value_type>;
 
+		public:
+			constexpr vector();
+			explicit  vector(size_type count, const reference value = T());
 		private:
-
+			size_type msize;
+			size_type mcapacity;
+			pointer   marr;
 	};
 } // namespace cpp
 
