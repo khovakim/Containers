@@ -1,8 +1,12 @@
 #ifndef  __VECTOR_H__
 # define __VECTOR_H__
 
+# include <iterator>
 # include <vector>
+
+
 # include "../Iterator/iterator.h"
+
 
 namespace cp
 {

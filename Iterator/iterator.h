@@ -3,5 +3,7 @@
 
 # include <bits/c++config.h>
 # include "base_iterator_types.h"
+# include "base_iterator_funcs.h"
+# include "random_access_iterator.h"
 
 #endif // __ITERATRO_H__

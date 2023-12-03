@@ -52,7 +52,7 @@ namespace cp
 			typedef T         value_type;
 			typedef Distance  difference_type;
 			typedef Pointer   pointer;
-			typedef Reference ;
+			typedef Reference reference;
 		};
 
 	/*======================================================*/
