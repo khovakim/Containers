@@ -200,6 +200,6 @@ namespace cp
 				operator<=(const random_access_iterator<T_L>& lhs, const random_access_iterator<T_R>& rhs)
 				{ return lhs.base() <= rhs.base(); }
 
-} // namespace cd
+} // namespace cp
 
 #endif 

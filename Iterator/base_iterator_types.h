@@ -97,6 +97,6 @@ namespace cp
 			typedef const T*                   pointer;
 			typedef const T&                   reference;
 		};
-} // namespace cpp
+} // namespace cp
 
 #endif //__BASE_ITERATOR_TYPES_H__

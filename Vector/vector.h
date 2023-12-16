@@ -14,18 +14,22 @@ namespace cp
 	class vector
 	{
 		public:
-			using value_type      = T;
-			using pointer         = T*;
-			using reference       = T&;
+			using value_type             = T;
 
-			using const_pointer   = const pointer;
-			using const_reference = const reference;
+			using pointer                = T*;
+			using reference              = T&;
 
-			using size_type       = std::size_t;
-			using difference_type = std::ptrdiff_t;
+			using const_pointer          = const pointer;
+			using const_reference        = const reference;
 
-			using iterator        = cp::random_access_iterator<value_type>;
-			using const_iterator  = cp::random_access_iterator<const value_type>;
+			using size_type              = std::size_t;
+			using difference_type        = std::ptrdiff_t;
+
+			using iterator               = cp::random_access_iterator<value_type>;
+			using const_iterator         = cp::random_access_iterator<const value_type>;
+
+			using reverse_iterator       = cp::reverse_iterator<iterator>;
+			using consr_reverse_iterator = cp::reverse_iterator<const_iterator>;
 
 		public:
 			constexpr          vector() noexcept;
@@ -43,7 +47,17 @@ namespace cp
 			constexpr vector& operator=(std::initializer_list<T> init);
 
 		public:
-			
+			constexpr iterator               begin()         noexcept;
+			constexpr const_iterator         cbegin()  const noexcept;
+
+			constexpr iterator               end()           noexcept;
+			constexpr const_iterator         cend()    const noexcept;
+
+			constexpr reverse_iterator       rbegin()        noexcept;
+			constexpr consr_reverse_iterator crbegin() const noexcept;
+
+			constexpr reverse_iterator       rend()          noexcept;
+			constexpr consr_reverse_iterator crend()   const noexcept;
 
 		private:
 			size_type msize;
